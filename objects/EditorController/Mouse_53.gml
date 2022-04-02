@@ -8,6 +8,7 @@ var clickedVertexID = getclickedVertexID();
 if (instance_exists(actualZone)) {
 	if (clickedVertexID) {
 		if (actualZone.canBeCompleted()) { 
+            setZoneReady();
 			actualZone = noone;
 			}
 	}else{

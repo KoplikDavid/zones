@@ -7,7 +7,7 @@ if (instance_exists(draggedPoint)) {
 	draggedPoint.y = mouse_y;
 	
 	with(Vertex) {
-		if (id != localDraggedP) {
+		if (id != localDraggedP && localDraggedP.myZone != myZone ) {
 			var distance = point_distance(x, y, localDraggedP.x, localDraggedP.y);
 			if (is_undefined(nearestVertex.distance) || nearestVertex.distance > distance) {
 				nearestVertex.instance = id;

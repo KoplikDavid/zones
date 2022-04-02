@@ -19,17 +19,23 @@ createZone = function() {
     ds_map_add(allZones, actualZone.id, actualZone);
 }
 
+setZoneReady = function() {
+    actualZone.isReady = true;
+}
+
 initialize = function() {
    createZone();
    addVertexAtPosition(0, 0);
    addVertexAtPosition(0, room_height);
    addVertexAtPosition(room_width/2, room_height);
    addVertexAtPosition(room_width/2, 0);
+   setZoneReady();
    createZone();
    addVertexAtPosition(room_width, 0);
    addVertexAtPosition(room_width, room_height);
    addVertexAtPosition(room_width/2, room_height);
    addVertexAtPosition(room_width/2, 0);
+   setZoneReady();
 }
 
-initialize()
+//initialize()
