@@ -1,6 +1,7 @@
 actualZone = noone;
 draggedPoint = noone;
 allZones = ds_map_create();
+areVertexesVisible = false;
 
 getclickedVertexID = function() {
     return collision_point(mouse_x, mouse_y, Vertex, false, false);
@@ -38,4 +39,4 @@ initialize = function() {
    setZoneReady();
 }
 
-//initialize()
+initialize();

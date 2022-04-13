@@ -1,0 +1,1 @@
+areVertexesVisible = !areVertexesVisible;

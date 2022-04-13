@@ -1,6 +1,6 @@
 myVertexList = ds_list_create();
 myColor = make_color_hsv(random(255), 255, 255);
-maxDistanceBetweenVertexes = 64;
+maxDistanceBetweenVertexes = 32;
 minDistanceBetweenVertexes = 16;
 step = 0;
 isReady = false;
